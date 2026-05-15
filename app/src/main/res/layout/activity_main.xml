@@ -1,18 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#222222">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/whiteKeys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/doBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="DO"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/reBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="RE"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/miBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="MI"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/faBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="FA"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/solBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SOL"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/laBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="LA"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/siBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SI"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/do2Btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="DO"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <!-- TECLAS NEGRAS -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/dosBtn"
+            android:layout_width="60dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="90dp"
+            android:background="#000000"/>
+
+        <Button
+            android:id="@+id/resBtn"
+            android:layout_width="60dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="220dp"
+            android:background="#000000"/>
+
+        <Button
+            android:id="@+id/fasBtn"
+            android:layout_width="60dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="480dp"
+            android:background="#000000"/>
+
+        <Button
+            android:id="@+id/solsBtn"
+            android:layout_width="60dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="610dp"
+            android:background="#000000"/>
+
+        <Button
+            android:id="@+id/lasBtn"
+            android:layout_width="60dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="740dp"
+            android:background="#000000"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
