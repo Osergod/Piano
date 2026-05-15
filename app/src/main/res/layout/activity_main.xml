@@ -1,121 +1,356 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222">
+    android:background="#F3F3F3"
+    android:padding="6dp"
+    android:splitMotionEvents="true">
 
     <LinearLayout
-        android:id="@+id/whiteKeys"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:splitMotionEvents="true">
 
         <Button
-            android:id="@+id/doBtn"
+            android:id="@+id/d2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="DO"
-            android:background="#FFFFFF"/>
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Re dos"
+            android:text="re"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
 
         <Button
-            android:id="@+id/reBtn"
+            android:id="@+id/e2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="RE"
-            android:background="#FFFFFF"/>
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Mi dos"
+            android:text="mi"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
 
         <Button
-            android:id="@+id/miBtn"
+            android:id="@+id/f2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="MI"
-            android:background="#FFFFFF"/>
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Fa dos"
+            android:text="fa"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
 
         <Button
-            android:id="@+id/faBtn"
+            android:id="@+id/g2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="FA"
-            android:background="#FFFFFF"/>
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Sol dos"
+            android:text="sol"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
 
         <Button
-            android:id="@+id/solBtn"
+            android:id="@+id/a2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="SOL"
-            android:background="#FFFFFF"/>
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="La dos"
+            android:text="la"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
 
         <Button
-            android:id="@+id/laBtn"
+            android:id="@+id/b2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="LA"
-            android:background="#FFFFFF"/>
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Si dos"
+            android:text="si"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
 
         <Button
-            android:id="@+id/siBtn"
+            android:id="@+id/c3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="SI"
-            android:background="#FFFFFF"/>
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Do tres"
+            android:text="do"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
 
         <Button
-            android:id="@+id/do2Btn"
+            android:id="@+id/d3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="DO"
-            android:background="#FFFFFF"/>
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Re tres"
+            android:text="re"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/e3Btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Mi tres"
+            android:text="mi"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/f3Btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Fa tres"
+            android:text="fa"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/g3Btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Sol tres"
+            android:text="sol"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/a3Btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="La tres"
+            android:text="la"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/b3Btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Si tres"
+            android:text="si"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/c4Btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Do cuatro"
+            android:text="do"
+            android:textAllCaps="false"
+            android:textColor="#202020"
+            android:textSize="13sp" />
 
     </LinearLayout>
 
-    <!-- TECLAS NEGRAS -->
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:splitMotionEvents="true">
+
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g1s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.0439" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g1e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.0989" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g2s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.1868" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g2e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.2418" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g3s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.2582" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g3e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.3132" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g4s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.3296" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g4e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.3846" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g5s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.4725" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g5e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.5275" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g6s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.5439" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g6e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.5989" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g7s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.6868" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g7e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.7418" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g8s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.7582" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.8132" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g9s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.8296" />
+        <androidx.constraintlayout.widget.Guideline android:id="@+id/g9e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.8846" />
 
         <Button
-            android:id="@+id/dosBtn"
-            android:layout_width="60dp"
-            android:layout_height="250dp"
-            android:layout_marginStart="90dp"
-            android:background="#000000"/>
+            android:id="@+id/d2SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="Re sostenido dos"
+            android:text="re#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g1e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g1s"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/resBtn"
-            android:layout_width="60dp"
-            android:layout_height="250dp"
-            android:layout_marginStart="220dp"
-            android:background="#000000"/>
+            android:id="@+id/f2SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="Fa sostenido dos"
+            android:text="fa#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g2e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g2s"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/fasBtn"
-            android:layout_width="60dp"
-            android:layout_height="250dp"
-            android:layout_marginStart="480dp"
-            android:background="#000000"/>
+            android:id="@+id/g2SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="Sol sostenido dos"
+            android:text="sol#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g3e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g3s"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/solsBtn"
-            android:layout_width="60dp"
-            android:layout_height="250dp"
-            android:layout_marginStart="610dp"
-            android:background="#000000"/>
+            android:id="@+id/a2SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="La sostenido dos"
+            android:text="la#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g4e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g4s"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/lasBtn"
-            android:layout_width="60dp"
-            android:layout_height="250dp"
-            android:layout_marginStart="740dp"
-            android:background="#000000"/>
+            android:id="@+id/c3SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="Do sostenido tres"
+            android:text="do#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g5e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g5s"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/d3SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="Re sostenido tres"
+            android:text="re#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g6e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g6s"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/f3SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="Fa sostenido tres"
+            android:text="fa#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g7e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g7s"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/g3SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="Sol sostenido tres"
+            android:text="sol#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g8e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g8s"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/a3SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="La sostenido tres"
+            android:text="la#"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/g9e"
+            app:layout_constraintHeight_percent="0.53"
+            app:layout_constraintStart_toStartOf="@id/g9s"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
