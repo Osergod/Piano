@@ -1,354 +1,459 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F3F3F3"
-    android:padding="6dp"
+    android:background="#000000"
     android:splitMotionEvents="true">
 
+    <!-- Teclas blancas del piano -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:splitMotionEvents="true">
 
-        <Button
+        <ImageButton
+            android:id="@+id/c2Btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/piano_white_key"
+            android:contentDescription="Do 2"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
+
+        <ImageButton
             android:id="@+id/d2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Re dos"
-            android:text="re"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Re 2"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/e2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Mi dos"
-            android:text="mi"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Mi 2"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/f2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Fa dos"
-            android:text="fa"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Fa 2"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/g2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Sol dos"
-            android:text="sol"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Sol 2"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/a2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="La dos"
-            android:text="la"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="La 2"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/b2Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Si dos"
-            android:text="si"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Si 2"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/c3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Do tres"
-            android:text="do"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Do 3"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/d3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Re tres"
-            android:text="re"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Re 3"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/e3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Mi tres"
-            android:text="mi"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Mi 3"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/f3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Fa tres"
-            android:text="fa"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Fa 3"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/g3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Sol tres"
-            android:text="sol"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Sol 3"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/a3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="La tres"
-            android:text="la"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="La 3"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/b3Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Si tres"
-            android:text="si"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Si 3"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/c4Btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/piano_white_key"
-            android:contentDescription="Do cuatro"
-            android:text="do"
-            android:textAllCaps="false"
-            android:textColor="#202020"
-            android:textSize="13sp" />
+            android:contentDescription="Do 4"
+            android:scaleType="fitXY"
+            android:padding="0dp" />
 
     </LinearLayout>
 
+    <!-- Teclas negras del piano -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:splitMotionEvents="true">
 
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g1s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.0439" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g1e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.0989" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g2s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.1868" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g2e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.2418" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g3s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.2582" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g3e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.3132" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g4s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.3296" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g4e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.3846" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g5s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.4725" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g5e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.5275" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g6s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.5439" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g6e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.5989" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g7s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.6868" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g7e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.7418" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g8s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.7582" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.8132" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g9s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.8296" />
-        <androidx.constraintlayout.widget.Guideline android:id="@+id/g9e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" app:layout_constraintGuide_percent="0.8846" />
+        <!-- Guidelines para colocar las negras en su sitio -->
 
-        <Button
+        <!-- C#2 entre C2 y D2 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b1Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0467" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b1End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0867" />
+
+        <!-- D#2 entre D2 y E2 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b2Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1133" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b2End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1533" />
+
+        <!-- F#2 entre F2 y G2 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b3Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2467" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b3End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2867" />
+
+        <!-- G#2 entre G2 y A2 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b4Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3133" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b4End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3533" />
+
+        <!-- A#2 entre A2 y B2 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b5Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.38" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b5End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.42" />
+
+        <!-- C#3 entre C3 y D3 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b6Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5133" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b6End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5533" />
+
+        <!-- D#3 entre D3 y E3 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b7Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.58" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b7End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62" />
+
+        <!-- F#3 entre F3 y G3 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b8Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7133" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b8End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7533" />
+
+        <!-- G#3 entre G3 y A3 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b9Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.78" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b9End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <!-- A#3 entre A3 y B3 -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b10Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8467" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/b10End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8867" />
+
+        <!-- Botones de las teclas negras -->
+
+        <ImageButton
+            android:id="@+id/c2SharpBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/piano_black_key"
+            android:contentDescription="Do sostenido 2"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b1End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b1Start"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
             android:id="@+id/d2SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="Re sostenido dos"
-            android:text="re#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g1e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g1s"
+            android:contentDescription="Re sostenido 2"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b2End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b2Start"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/f2SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="Fa sostenido dos"
-            android:text="fa#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g2e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g2s"
+            android:contentDescription="Fa sostenido 2"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b3End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b3Start"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/g2SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="Sol sostenido dos"
-            android:text="sol#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g3e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g3s"
+            android:contentDescription="Sol sostenido 2"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b4End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b4Start"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/a2SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="La sostenido dos"
-            android:text="la#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g4e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g4s"
+            android:contentDescription="La sostenido 2"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b5End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b5Start"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/c3SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="Do sostenido tres"
-            android:text="do#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g5e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g5s"
+            android:contentDescription="Do sostenido 3"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b6End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b6Start"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/d3SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="Re sostenido tres"
-            android:text="re#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g6e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g6s"
+            android:contentDescription="Re sostenido 3"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b7End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b7Start"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/f3SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="Fa sostenido tres"
-            android:text="fa#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g7e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g7s"
+            android:contentDescription="Fa sostenido 3"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b8End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b8Start"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/g3SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="Sol sostenido tres"
-            android:text="sol#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g8e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g8s"
+            android:contentDescription="Sol sostenido 3"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b9End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b9Start"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/a3SharpBtn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/piano_black_key"
-            android:contentDescription="La sostenido tres"
-            android:text="la#"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/g9e"
-            app:layout_constraintHeight_percent="0.53"
-            app:layout_constraintStart_toStartOf="@id/g9s"
+            android:contentDescription="La sostenido 3"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@id/b10End"
+            app:layout_constraintHeight_percent="0.56"
+            app:layout_constraintStart_toStartOf="@id/b10Start"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

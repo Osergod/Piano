@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="piano_primary">#2B2B2B</color>
-    <color name="piano_primary_dark">#171717</color>
+    <color name="piano_primary">#FFFFFF</color>
+    <color name="piano_primary_dark">#F5F5F5</color>
     <color name="piano_secondary">#607D8B</color>
     <color name="piano_secondary_dark">#455A64</color>
     <color name="purple_200">#FFBB86FC</color>

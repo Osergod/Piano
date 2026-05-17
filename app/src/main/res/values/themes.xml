@@ -4,13 +4,15 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/piano_primary</item>
         <item name="colorPrimaryVariant">@color/piano_primary_dark</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/piano_secondary</item>
         <item name="colorSecondaryVariant">@color/piano_secondary_dark</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/piano_primary_dark</item>
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/white</item>
         <!-- Prevent Material tint from painting keys purple. -->
         <item name="buttonStyle">@style/Widget.Piano.Button</item>
         <!-- Customize your theme here. -->
